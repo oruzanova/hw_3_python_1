@@ -30,8 +30,7 @@ email["to"] = email["to"].lower().strip()
 
 login = email["from"].split('@')[0]
 domain = email["from"].split('@')[1]
-print(f'login отправителя - {login}\ndomain отправителя - {domain}')
-print()
+print(f'login отправителя - {login}\ndomain отправителя - {domain}\n')
 
 # 5. Создайте сокращённую версию текста: возьмите первые 10 символов email["body"] и добавьте многоточие "...".
 # Сохраните в новый ключ словаря: email["short_body"].
@@ -86,8 +85,7 @@ print(f'pages - {pages}')
 
 is_subject_empty = not email["subject"].strip()
 is_body_empty = not email["body"].strip()
-print(f'is_subject_empty - {is_subject_empty}\nis_body_empty - {is_body_empty}')
-print()
+print(f'is_subject_empty - {is_subject_empty}\nis_body_empty - {is_body_empty}\n')
 
 # 13. Создайте «маску» e-mail отправителя: первые 2 символа логина + "***@" + домен.
 # Запишите в email["masked_from"].
